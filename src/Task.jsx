@@ -118,10 +118,10 @@ const Task = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="mb-6 text-base text-gray-300 px-4 md:px-0 text-center"
+          className="mb-6 text-[16px] text-gray-300  md:px-0 "
         >
-          Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi
-          rhoncus, tellus, eros
+          Risus commodo id odio turpis pharetra elementum. Pulvinar porta <br /> porta feugiat scelerisque in elit.
+          Morbi rhoncus, tellus, eros
         </motion.p>
 
         <div className="flex flex-col md:flex-row gap-4 md:gap-5 w-full md:justify-center items-center">
