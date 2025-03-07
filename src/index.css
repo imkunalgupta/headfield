@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+      font-family: "Manrope", "Open Sans", sans-serif;
+      font-size: 14px;
+  }
+  :root{
+      --primary: #2284c5;
+  }
+  .text-base{
+      font-size: 0.9rem;
+  }
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@layer components {
+  .btn-block {
+      display: block;
+      width: 100%;
+  }
+
+  .bg-primary {
+      background-color: #006aff;
+  }
+
+  .link-text {
+      color: #006aff;
+  }
+
+  .dark .bg-primary {
+      background-color: #00304c;
+  }
+
+  .text-primary {
+      color: #2284c5;
+  }
+
+  .dark .text-primary {
+      color: #00304c;
+  }
+
+  .btn-primary {
+      @apply h-[38px] text-white bg-primary-color hover:bg-[#0052c5] font-medium rounded-md text-sm px-5 py-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none;
+  }
+
+  .btn-secondary {
+      @apply text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600;
+  }
+
+  .btn-outline {
+      @apply bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded focus:outline-none;
+  }
+
+  .form-control {
+      @apply bg-white mt-2 appearance-none border-2 border-gray-200 rounded py-2 px-4 w-full text-gray-500 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 dark:focus:border-gray-200 dark:bg-custom-bg dark:border-custom-border;
+  }
+
+  .form-select {
+      @apply bg-white mt-2 border-2 border-gray-200 rounded py-2 px-4 w-full text-gray-500 leading-tight focus:outline-none focus:bg-white focus:border-blue-500 dark:focus:border-gray-200 dark:bg-custom-bg dark:border-custom-border cursor-pointer
+  }
+
+  /* common Stayle  */
+  /* display-flex, justify-center , align-center  */
+  .df-center-center {
+      @apply flex items-center justify-center
+  }
+
+  /* display-flex , justify-content-start, align-item-center */
+  .df-left-center {
+      @apply flex justify-start items-center
+  }
+
+  /*  display-flex, flex-direction-column justify-center , align-center  */
+  .df-col-center-center {
+      @apply flex flex-col items-center justify-center
+  }
+
+  /*  display-flex, flex-direction-column justify-center , align-center, width-100, height-100 */
+  .df-center-center-w100-h100 {
+      @apply flex items-center justify-center w-full h-full
+  }
+
+  /*  allPageBody  */
+  .allPageBody {
+      @apply h-[calc(100vh-50px)] w-full fixed top-[50px] right-0
+  }
+
+  .layout {
+      @apply dark:bg-gray-900 dark:text-white w-full px-10 overflow-scroll overflow-x-hidden pt-5 h-full
+  }
+
+  .custom-setting-height {
+      @apply h-full;
+      height: calc(100% - 70px);
+  }
+
+  .batch_comingsoon {
+      @apply text-[9px] bg-green-200 dark:bg-green-600 px-[10px] h-5 py-[2px] rounded-md relative bottom-1 md:bottom-2
+  }
+
+
+
+  /* dinesh  */
+  .border-left {
+      box-shadow: inset 1px 0 0 0 #e5e7eb;
+  }
+
+  .rounded-table {
+      border: 2px solid gray;
+      border-radius: 5rem;
+      /* Adjust this value to change the roundness */
+  }
+
+  .select-row {
+      background-color: #b7e4ff;
+  }
+
+  .text-area {
+      @apply bg-white p-2 mt-1 dark:bg-gray-800 dark:text-white max-h-[38px] min-h-[38px] h-[38px] m-0 resize-none appearance-none border border-gray-200 rounded text-gray-500 leading-tight focus:border-blue-500 outline-none w-full;
+  }
+
+  .select-control {
+      @apply bg-gray-50 border px-3 mt-1 outline-none max-h-[138px] min-h-[38px] h-auto overflow-y-auto box-border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500;
+  }
+
+  /*
+  .btn-outline {
+      @apply hover:text-[#006afe] border hover:border-[#006afe] focus:outline-none focus:ring-gray-100 font-medium rounded-md text-sm px-4 py-1.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 my-2 mb-2;
+  } */
+
+  .btn-outline-fill {
+      @apply text-gray-900 h-[38px] hover:border-[#006afe] bg-white border border-gray-200 focus:outline-none focus:ring-gray-100 font-medium rounded-md text-sm px-4 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2;
+  }
+
+  .btn-link {
+      @apply text-blue-700 ml-1 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-4 py-1.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 my-2 mb-2;
+  }
+
+  .coustom-react-select {
+      @apply text-xs mt-1 border-gray-300 rounded-md dark:bg-gray-800 block w-full focus:outline-none dark:focus:bg-gray-600;
+  }
+
+  .table-padding {
+      @apply py-3;
+  }
+
+  .checkbox-control {
+      @apply w-4 h-4 text-blue-600 bg-gray-100 border-[#e7e7e7] rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
+
+  .menu-items {
+      @apply block px-4 py-2 rounded-md hover:bg-[#006afe] hover:text-white dark:hover:bg-gray-600 dark:hover:text-white;
+  }
+
+  .option-items {
+      @apply block px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-600 dark:hover:text-white;
+  }
+
+  .center {
+      @apply flex justify-center;
+  }
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
