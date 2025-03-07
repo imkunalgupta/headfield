@@ -103,15 +103,15 @@ const Task = () => {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-7xl font-bold leading-tight text-center"
+          className="text-[96px] md:text-7xl font-bold leading-tight"
         >
           <p>Attract</p>
-          <span className="flex flex-col md:flex-row items-center justify-center md:-mt-10">
+          <span className="flex flex-col md:flex-row items-center justify-center -mt-4 md:-mt-10">
             <p className="mt-0 text-orange-400">New</p>
             <p className="text-green-400 ml-2">Leads</p>
           </span>
-          <p className=" md:-mt-10">like never</p>
-          <p className=" md:-mt-10">before</p>
+          <p className="-mt-4 md:-mt-10">like never</p>
+          <p className="-mt-4 md:-mt-10">before</p>
         </motion.h1>
 
         <motion.p
